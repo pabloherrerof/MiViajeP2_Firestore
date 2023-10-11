@@ -1,0 +1,117 @@
+@import "../../../styles.scss";
+
+section{
+    min-height: calc(100vh - 80px);
+    width: 100vw;
+    background-color: $paleWhite;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+}
+.image{
+    width: 250px;
+    background-image: url("https://unsplash.com/es/fotos/wfwUpfVqrKU");
+    height: 170px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 1rem;
+    opacity: 65%;
+    border-top: 6px solid $gray;
+    border-bottom: 6px solid $gray;
+
+}
+
+
+.container{
+    margin: 0;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 250px);
+    column-gap: 2%;
+    row-gap: 2rem;
+    align-items: center;  
+}
+
+.dayContainer{
+    background-color: $lightBlack;
+    height: 353px;
+    border-radius: 20px;
+    text-align: center;
+    color: $paleWhite;
+    font-family: "Poppins";
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    &:hover{
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        scale: 1.1;
+        cursor: pointer;
+        .detailsButton{
+            fill: $red;
+            h4{
+                color: $red;}
+        }
+        .number{
+            color: $red;
+        }
+    }
+}
+
+.day{ 
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    h2{
+        font-size: 16px;
+    }
+}
+
+
+.cityName{
+    font-family: "Red Rose";
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0rem;
+}
+
+.detailsButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    fill: $paleWhite;
+    h4{
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+
+@media screen and (max-width: 1100px){
+    .container{
+        grid-template-columns: repeat(3, 250px);
+    }
+}
+
+@media screen and (max-width: 950px){
+    .container{
+        grid-template-columns: repeat(2, 250px);
+    }
+}
+
+@media screen and (max-width: 560px){
+    .container{
+        grid-template-columns: repeat(1, 250px);
+    }
+}

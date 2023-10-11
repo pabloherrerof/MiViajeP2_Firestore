@@ -1,0 +1,26 @@
+@import "../../../styles.scss";
+@import "~font-awesome/css/font-awesome.css";
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;;
+    background-color: $red;
+
+    a{
+        text-decoration: none;
+        color: $paleWhite;
+        font-weight: bold;
+        font-size: 32px;
+        display: flex;
+        gap: 10px;
+    }
+    svg{
+        font-size: 20px;
+        fill: $paleWhite;
+    }
+}

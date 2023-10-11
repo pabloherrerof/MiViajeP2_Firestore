@@ -1,0 +1,11 @@
+@import "../../../styles.scss";
+
+section{
+    min-height: calc(100vh - 80px);
+    width: 100vw;
+    background-color: $paleWhite;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+}
