@@ -7,6 +7,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { DaysLayoutComponent } from './components/days-layout/days-layout.component';
 import { DaysDetailComponent } from './components/days-detail/days-detail.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PlayerComponent } from './components/player/player.component';
+import { FiltersComponent } from './components/filters/filters.component';
 
 
 @NgModule({
@@ -14,7 +16,9 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     NavbarComponent,
     DaysLayoutComponent,
-    DaysDetailComponent
+    DaysDetailComponent,
+    PlayerComponent,
+    FiltersComponent
     
   ],
   imports: [

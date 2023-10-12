@@ -1,0 +1,59 @@
+@import "../../../styles.scss";
+
+section{
+    min-height: calc(100vh - 80px);
+    width: 100vw;
+    background-color: $paleWhite;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+}
+
+.container{
+    width: 80vw;
+    height: 60vw;
+}
+
+.player{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    
+}
+
+.backButton{
+    text-transform: uppercase;
+    font-size: "Poppins";
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+        font-size: 20px;
+        fill: $paleWhite;
+        z-index: 19;
+        position: absolute;
+        top: 60px;
+        left: 30px;
+        color: $paleWhite;
+
+        &:hover{
+            cursor: pointer;
+            fill: $red;
+            color: $red;
+        }
+}
+
+video{
+    margin-top: 0.5rem;
+    position: relative;
+    width: 80vw;
+    height: 60vw;
+    border-radius: 20px;
+    max-width: 800px;
+    max-height: 600px;
+    background-color: $lightBlack;
+    
+}
