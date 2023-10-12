@@ -11,14 +11,13 @@ section{
 }
 .image{
     width: 250px;
-    background-image: url("https://unsplash.com/es/fotos/wfwUpfVqrKU");
     height: 170px;
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 1rem;
-    opacity: 65%;
-    border-top: 6px solid $gray;
-    border-bottom: 6px solid $gray;
+    opacity: 85%;
+    border-top: 6px solid $paleWhite;
+    border-bottom: 6px solid $paleWhite;
 
 }
 
@@ -32,6 +31,7 @@ section{
     column-gap: 2%;
     row-gap: 2rem;
     align-items: center;  
+    z-index: 10;
 }
 
 .dayContainer{

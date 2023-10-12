@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { DaysLayoutComponent } from './components/days-layout/days-layout.component';
 import { DaysDetailComponent } from './components/days-detail/days-detail.component';
-
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -14,10 +14,13 @@ import { DaysDetailComponent } from './components/days-detail/days-detail.compon
     AppComponent,
     NavbarComponent,
     DaysLayoutComponent,
+    DaysDetailComponent
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

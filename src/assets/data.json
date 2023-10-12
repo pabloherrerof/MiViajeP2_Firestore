@@ -1,0 +1,172 @@
+[
+  {
+    "dia": 1,
+    "ciudad": {
+      "nombre": "Tokyo",
+      "imagen": "https://images.unsplash.com/photo-1533050487297-09b450131914?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80"
+    },
+    "video": {
+      "miniatura": "https://images.unsplash.com/photo-1578592439618-cbe39942ff0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3087&q=80",
+      "link": "url_videoTokyo.mp4"
+    },
+    "actividades": ["Visit Tokyo Tower", "Explore Asakusa Temple", "Shopping in Shibuya", "Dine in Tsukiji Fish Market"],
+    "hotel": {
+      "foto": "https://images.unsplash.com/photo-1539606420556-14c457c45507?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2852&q=80",
+      "nombre": "Nine Hours Akasaka",
+      "direccion": "1 Chome-8-2 Oshiage, Sumida City, Tokyo"
+    }
+  },
+  {
+    "dia": 2,
+    "ciudad": {
+      "nombre": "Tokyo",
+      "imagen": "https://images.unsplash.com/photo-1542931287-023b922fa89b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80"
+    },
+    "video": {
+      "miniatura": "https://images.unsplash.com/photo-1685533849887-37001c83944d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "link": "url_videoTokyo.mp4"
+    },
+    "actividades": ["Visit Meiji Shrine", "Stroll in Ueno Park", "Experience Akihabara", "Night view from Tokyo Skytree"],
+    "hotel": {
+      "foto": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Imperial_Hotel_Tokyo.JPG",
+      "nombre": "Imperial Hotel Tokyo",
+      "direccion": "1-1, Uchisaiwaicho 1-chome, Chiyoda-ku, Tokyo"
+    }
+  },
+  {
+    "dia": 3,
+    "ciudad": {
+      "nombre": "Kyoto",
+      "imagen": "https://images.unsplash.com/photo-1558862107-d49ef2a04d72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+    },
+    "video": {
+      "miniatura": "https://images.unsplash.com/photo-1624253321171-1be53e12f5f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80",
+      "link": "url_videoKyoto.mp4"
+    },
+    "actividades": ["Visit Kiyomizu Temple", "Stroll in Gion District", "Explore Fushimi Inari Shrine", "Relax at Arashiyama Bamboo Grove"],
+    "hotel": {
+      "foto": "https://www.outthere.travel/wp-content/uploads/2020/11/Ritz-Calrton-Kyoto-5.jpg",
+      "nombre": "Ritz-Carlton Kyoto",
+      "direccion": "Kamogawa Nijo-Ohashi Hotori, Nakagyo Ward, Kyoto"
+    }
+  },
+  {
+    "dia": 4,
+    "ciudad": {
+      "nombre": "Kyoto",
+      "imagen": "https://images.unsplash.com/photo-1558870832-c8db4b5b47d1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1288&q=80"
+    },
+    "video": {
+      "miniatura": "https://images.unsplash.com/photo-1580639613257-5b1a20fe3760?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1380&q=80",
+      "link": "url_videoKyoto.mp4"
+    },
+    "actividades": ["Visit Golden Pavilion", "Explore Nijo Castle", "Tea Ceremony Experience", "Dine in Pontocho Alley"],
+    "hotel": {
+      "foto": "https://www.kayak.com.co/rimg/himg/af/e4/1a/expediav2-2948915-bd6bac-639828.jpg?width=720&height=576&crop=true",
+      "nombre": "Kyoto Granbell Hotel",
+      "direccion": "Gionmachi Minamigawa, Higashiyama Ward, Kyoto"
+    }
+  },
+  {
+    "dia": 5,
+    "ciudad": {
+      "nombre": "Osaka",
+      "imagen": "https://images.unsplash.com/photo-1590559899731-a382839e5549?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80"
+    },
+    "video": {
+      "miniatura": "https://images.unsplash.com/photo-1547647496-b2d16f4fdb69?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1286&q=80",
+      "link": "url_videoOsaka.mp4"
+    },
+    "actividades": ["Visit Osaka Castle", "Shopping in Dotonbori", "Experience Universal Studios Japan", "Taste Takoyaki in Namba"],
+    "hotel": {
+      "foto": "https://www.inax.com/wp-content/uploads/reference_japan_3_p010.jpg",
+      "nombre": "Osaka Marriott Miyako Hotel",
+      "direccion": "1-1-43 Abenosuji, Abeno Ward, Osaka"
+    }
+  },
+  {
+    "dia": 6,
+    "ciudad": {
+      "nombre": "Osaka",
+      "imagen": "https://images.unsplash.com/photo-1608516494623-2df85572e673?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80"
+    },
+    "video": {
+      "miniatura": "https://images.unsplash.com/photo-1617599137346-98e7c279ebe6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1292&q=80",
+      "link": "url_videoOsaka.mp4"
+    },
+    "actividades": ["Explore Shinsaibashi", "Visit Tsutenkaku Tower", "Relax at Spa World", "Dine in Kuromon Ichiba Market"],
+    "hotel": {
+      "foto": "https://z.cdrst.com/foto/hotel-sf/39b3a/medianaresp/intercontinental-hotel-osaka-an-ihg-hotel-habitacion-cae673f.jpg",
+      "nombre": "InterContinental Osaka",
+      "direccion": "3-60 Ofuka-cho, Kita-ku, Osaka"
+    }
+  },
+  {
+    "dia": 7,
+    "ciudad": {
+      "nombre": "Sapporo",
+      "imagen": "https://images.unsplash.com/photo-1514186077719-5f31a164c12e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1331&q=80"
+    },
+    "video": {
+      "miniatura": "https://images.unsplash.com/photo-1539648927287-2494ae5fdbf5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1296&q=80",
+      "link": "url_videoSapporo.mp4"
+    },
+    "actividades": ["Visit Odori Park", "Experience Sapporo Beer Museum", "Stroll in Susukino District", "Taste Ramen in Ramen Alley"],
+    "hotel": {
+      "foto": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Sapporo_Grand_Hotel_exterior_01.jpg",
+      "nombre": "Sapporo Grand Hotel",
+      "direccion": "4 Chome Kita 1 Jonishi, Chuo Ward, Sapporo"
+    }
+  },
+  {
+    "dia": 8,
+    "ciudad": {
+      "nombre": "Kōbe",
+      "imagen": "https://images.unsplash.com/photo-1595854902263-bfce150abad8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1365&q=80"
+    },
+    "video": {
+      "miniatura": "https://images.unsplash.com/photo-1669530538946-8f594e0d6e46?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "link": "url_videoKobe.mp4"
+    },
+    "actividades": ["Visit Kobe Harborland", "Experience Kobe Ropeway", "Taste Kobe Beef", "Explore Nunobiki Herb Garden"],
+    "hotel": {
+      "foto": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/318316574.jpg?k=8673c2141afb7bf82a9a2d4e01208a6a59ba63fc4b333ddb68875c1e876610ec&o=&hp=1",
+      "nombre": "Kobe Portopia Hotel",
+      "direccion": "6-10-1 Minatojima Nakamachi, Chuo Ward, Kobe"
+    }
+  },
+  {
+    "dia": 9,
+    "ciudad": {
+      "nombre": "Kōbe",
+      "imagen": "https://images.unsplash.com/photo-1629273152826-fcdf5a669354?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+    },
+    "video": {
+      "miniatura": "https://images.unsplash.com/photo-1607586355793-34ab20949e28?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "link": "url_videoKobe.mp4"
+    },
+    "actividades": ["Stroll in Ikuta Shrine", "Visit Kobe Animal Kingdom", "Shopping in Motomachi", "Relax at Arima Onsen"],
+    "hotel": {
+      "foto": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/365174403.jpg?k=479b0ff234d60f9279a9eadd94fc23ff07c6d6ed4685e08ab63e54a770d4301f&o=&hp=1",
+      "nombre": "Hotel La Suite Kobe Harborland",
+      "direccion": "7-2 Hatobacho, Chuo Ward, Kobe"
+    }
+  },
+  {
+    "dia": 10,
+    "ciudad": {
+      "nombre": "Okinawa",
+      "imagen": "https://images.unsplash.com/photo-1593297445107-9bdfd8fd950d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+    },
+    "video": {
+      "miniatura": "https://images.unsplash.com/photo-1610976689391-c749d937dcab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1512&q=80",
+      "link": "url_videoOkinawa.mp4"
+    },
+    "actividades": ["Visit Shurijo Castle", "Relax at Naminoue Beach", "Explore Okinawa Churaumi Aquarium", "Dine in Kokusai Dori Street"],
+    "hotel": {
+      "foto": "https://www.hilton.com/im/en/OKAOCHI/3239957/45-days-bb.jpg?impolicy=crop&cw=4928&ch=2759&gravity=NorthWest&xposition=0&yposition=260&rw=768&rh=430",
+      "nombre": "Hilton Okinawa Chatan Resort",
+      "direccion": "40-1 Mihama, Chatan, Nakagami District, Okinawa"
+    }
+  }
+]

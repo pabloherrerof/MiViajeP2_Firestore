@@ -1,11 +1,11 @@
 <section >
-    <div class="container" >
+    <div class="container slide-in-elliptic-top-fwd " >
         <div class="dayContainer" *ngFor="let day of itinerary; let i = index" [routerLink]="['/day', day.dia]">
             <div class="day">
                 <h2  >day </h2> <h2 class="number">{{i + 1}}</h2>
             </div>
             
-            <div class="image" ></div>
+            <div class="image" [style.backgroundImage]="'url(' + day.ciudad.imagen + ')'"></div>
             <h1 class="cityName">{{ day.ciudad.nombre.toUpperCase() }}</h1>
             <div class="detailsButton">
                 <svg xmlns="http://www.w3.org/2000/svg" height="1em"
