@@ -5,7 +5,8 @@ section{
     width: 100vw;
     background-color: $paleWhite;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding-bottom: 3rem;
     padding-top: 2rem;
 }
@@ -25,9 +26,10 @@ section{
 .container{
     margin: 0;
     width: 100%;
-    display: grid;
+    max-width: 900px;
+    display: flex;
     justify-content: center;
-    grid-template-columns: repeat(4, 250px);
+    flex-wrap: wrap ;
     column-gap: 2%;
     row-gap: 2rem;
     align-items: center;  

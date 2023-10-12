@@ -1,1 +1,10 @@
-<p>filters works!</p>
+<section>
+    <select class="nameSelect" (change)="onCityChange($event)">
+             <option  value="All">All</option>
+            <option *ngFor="let city of uniqueCities" [value]="city">{{ city }}</option>
+    </select>
+    <select class="daySelect" (change)="onDayChange($event)">
+        <option  value="All">All</option>
+        <option *ngFor="let day of uniqueDays" [value]="day">Día {{ day }}</option>
+    </select>
+</section>

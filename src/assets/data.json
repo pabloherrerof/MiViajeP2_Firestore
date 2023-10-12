@@ -24,7 +24,7 @@
     },
     "video": {
       "miniatura": "https://images.unsplash.com/photo-1685533849887-37001c83944d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-      "link": "url_videoTokyo.mp4"
+      "link": "assets/video/tokio2.mp4"
     },
     "actividades": ["Visit Meiji Shrine", "Stroll in Ueno Park", "Experience Akihabara", "Night view from Tokyo Skytree"],
     "hotel": {
@@ -41,7 +41,7 @@
     },
     "video": {
       "miniatura": "https://images.unsplash.com/photo-1624253321171-1be53e12f5f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80",
-      "link": "url_videoKyoto.mp4"
+      "link": "assets/video/kyoto1.mp4"
     },
     "actividades": ["Visit Kiyomizu Temple", "Stroll in Gion District", "Explore Fushimi Inari Shrine", "Relax at Arashiyama Bamboo Grove"],
     "hotel": {
@@ -58,7 +58,7 @@
     },
     "video": {
       "miniatura": "https://images.unsplash.com/photo-1580639613257-5b1a20fe3760?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1380&q=80",
-      "link": "url_videoKyoto.mp4"
+      "link": "assets/video/kyoto2.mp4"
     },
     "actividades": ["Visit Golden Pavilion", "Explore Nijo Castle", "Tea Ceremony Experience", "Dine in Pontocho Alley"],
     "hotel": {
@@ -75,7 +75,7 @@
     },
     "video": {
       "miniatura": "https://images.unsplash.com/photo-1547647496-b2d16f4fdb69?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1286&q=80",
-      "link": "url_videoOsaka.mp4"
+      "link": "assets/video/osaka1.mp4"
     },
     "actividades": ["Visit Osaka Castle", "Shopping in Dotonbori", "Experience Universal Studios Japan", "Taste Takoyaki in Namba"],
     "hotel": {
@@ -92,7 +92,7 @@
     },
     "video": {
       "miniatura": "https://images.unsplash.com/photo-1617599137346-98e7c279ebe6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1292&q=80",
-      "link": "url_videoOsaka.mp4"
+      "link": "assets/video/osaka2.mp4"
     },
     "actividades": ["Explore Shinsaibashi", "Visit Tsutenkaku Tower", "Relax at Spa World", "Dine in Kuromon Ichiba Market"],
     "hotel": {
@@ -109,7 +109,7 @@
     },
     "video": {
       "miniatura": "https://images.unsplash.com/photo-1539648927287-2494ae5fdbf5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1296&q=80",
-      "link": "url_videoSapporo.mp4"
+      "link": "assets/video/sapporo.mp4"
     },
     "actividades": ["Visit Odori Park", "Experience Sapporo Beer Museum", "Stroll in Susukino District", "Taste Ramen in Ramen Alley"],
     "hotel": {
@@ -126,7 +126,7 @@
     },
     "video": {
       "miniatura": "https://images.unsplash.com/photo-1669530538946-8f594e0d6e46?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-      "link": "url_videoKobe.mp4"
+      "link": "assets/video/kobe1.mp4"
     },
     "actividades": ["Visit Kobe Harborland", "Experience Kobe Ropeway", "Taste Kobe Beef", "Explore Nunobiki Herb Garden"],
     "hotel": {
@@ -143,7 +143,7 @@
     },
     "video": {
       "miniatura": "https://images.unsplash.com/photo-1607586355793-34ab20949e28?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-      "link": "url_videoKobe.mp4"
+      "link": "assets/video/kobe2.mp4"
     },
     "actividades": ["Stroll in Ikuta Shrine", "Visit Kobe Animal Kingdom", "Shopping in Motomachi", "Relax at Arima Onsen"],
     "hotel": {
@@ -160,7 +160,7 @@
     },
     "video": {
       "miniatura": "https://images.unsplash.com/photo-1610976689391-c749d937dcab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1512&q=80",
-      "link": "url_videoOkinawa.mp4"
+      "link": "assets/video/okinawa1.mp4"
     },
     "actividades": ["Visit Shurijo Castle", "Relax at Naminoue Beach", "Explore Okinawa Churaumi Aquarium", "Dine in Kokusai Dori Street"],
     "hotel": {

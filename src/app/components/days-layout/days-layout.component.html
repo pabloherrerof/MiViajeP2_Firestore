@@ -1,8 +1,9 @@
 <section >
-    <div class="container slide-in-elliptic-top-fwd " >
-        <div class="dayContainer" *ngFor="let day of itinerary; let i = index" [routerLink]="['/day', day.dia]">
+    <app-filters></app-filters>
+    <div class="container slide-in-elliptic-top-fwd "  *ngIf="filteredData.length > 0"   >
+        <div class="dayContainer" *ngFor="let day of filteredData; let i = index" [routerLink]="['/day', day.dia]">
             <div class="day">
-                <h2  >day </h2> <h2 class="number">{{i + 1}}</h2>
+         <h2 class="number">{{day.dia}}</h2>
             </div>
             
             <div class="image" [style.backgroundImage]="'url(' + day.ciudad.imagen + ')'"></div>
@@ -16,5 +17,19 @@
                 <h4>details</h4>
             </div>
         </div>
+        
     </div>
+    <div class="container slide-in-elliptic-top-fwd "  *ngIf="filteredData.length === 0"   >
+        <div class="dayContainer" >
+            <div class="day">
+                <h2  >day </h2> <h2 class="number">X</h2>
+            </div>
+            
+            <div class="image" ></div>
+            <h1 class="cityName">NOT FOUND</h1>
+    
+        </div>
+        
+    </div>
+
 </section>
