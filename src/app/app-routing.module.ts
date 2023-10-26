@@ -6,8 +6,8 @@ import { PlayerComponent } from './components/player/player.component';
 
 const routes: Routes = [
   { path: '', component: DaysLayoutComponent },
-  { path: 'day/:dia', component: DaysDetailComponent },
-  { path: 'day/:dia/video', component: PlayerComponent },
+  { path: 'day/:id', component: DaysDetailComponent },
+  { path: 'day/:id/video', component: PlayerComponent },
 ];
 
 @NgModule({

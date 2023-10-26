@@ -1,15 +1,16 @@
 <section>
     <div class="container">
-        <div class="player slide-in-elliptic-top-fwd">
-            
+       
+        <div class="player slide-in-elliptic-top-fwd" *ngIf="registro$ | async as registro">
+            <div class="backButton " [routerLink]="['/day', registro.id]">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+            <h2>back</h2>
+            </div>
             <div class="player__video" *ngIf="registro">
-                <div class="backButton " [routerLink]="['/day', registro.dia]">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
-                    <span>go back</span>
-                </div>
                
-                <video *ngIf="video" width="320" height="240" controls autoplay>
-                    <source [src]="video.link" type="video/mp4">
+               
+                <video width="320" height="240" controls autoplay>
+                    <source [src]="registro.video.link" type="video/mp4">
                     Tu navegador no soporta la etiqueta de video.
                   </video>
             </div>

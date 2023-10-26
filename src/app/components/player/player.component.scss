@@ -7,7 +7,7 @@ section{
     display: flex;
     justify-content: center;
     padding-bottom: 3rem;
-    padding-top: 2rem;
+    padding-top: 5vw;
 }
 
 .container{
@@ -16,29 +16,35 @@ section{
 }
 
 .player{
-    width: 100%;
-    height: 100%;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem
+}
+
+    
+
+
+.player__video{
     position: relative;
     display: flex;
     justify-content: center;
-    padding-top: 2rem;
-    
 }
 
 .backButton{
-    text-transform: uppercase;
     font-size: "Poppins";
     display: flex;
     align-items: center;
     gap: 1rem;
-        font-size: 20px;
-        fill: $paleWhite;
-        z-index: 19;
-        position: absolute;
-        top: 60px;
-        left: 30px;
-        color: $paleWhite;
-
+        font-size: 30px;
+        fill: $lightBlack;
+        margin-left: 20px;
+        h2{
+            margin: 0;
+            font-size: 20px;
+        }
         &:hover{
             cursor: pointer;
             fill: $red;
@@ -47,13 +53,24 @@ section{
 }
 
 video{
-    margin-top: 0.5rem;
     position: relative;
     width: 80vw;
-    height: 60vw;
+    height: 100%;
     border-radius: 20px;
-    max-width: 800px;
-    max-height: 600px;
+
     background-color: $lightBlack;
+    
+}
+
+@media screen and (max-width: 900px){
+    section{
+        padding-top: 10vw;
+    }
+
+    .backButton{
+        h2{
+            font-size: 16px;
+        }
+    }
     
 }

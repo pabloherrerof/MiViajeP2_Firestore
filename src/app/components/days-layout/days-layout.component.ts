@@ -1,26 +1,11 @@
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { FilterService } from 'src/app/services/cityFilter/city-filter.service';
 import { DayFilterService } from 'src/app/services/dayFilter/day-filter.service';
-import { combineLatest } from 'rxjs';
+import { Observable, combineLatest } from 'rxjs';
 
-interface ItineraryItem {
-  dia: number;
-  ciudad: {
-    nombre: string;
-    imagen: string;
-  };
-  video: {
-    miniatura: string;
-    link: string;
-  };
-  actividades: string[];
-  hotel: {
-    foto: string;
-    nombre: string;
-    direccion: string;
-  };
-}
+import { DaysFirestoreService } from 'src/app/services/firestore/days-firestore.service';
+import { map, switchMap } from 'rxjs/operators';
+import { Itinerario } from 'src/app/interface/itinerario.interface';
 
 @Component({
   selector: 'app-days-layout',
@@ -28,42 +13,42 @@ interface ItineraryItem {
   styleUrls: ['./days-layout.component.scss']
 })
 export class DaysLayoutComponent {
-  itinerary: ItineraryItem[]  = [];
-  filteredData : ItineraryItem[] = [];
+  days$: Observable<Itinerario[]>;
+  selectedDay?: Itinerario;
 
-  constructor(private http: HttpClient, private filterService: FilterService, private dayFilterService: DayFilterService) { }
+  constructor(private daysService: DaysFirestoreService, private filterService: FilterService, private dayFilterService: DayFilterService) { }
+
+  selectPokemon(pokemon: Itinerario) {
+    this.selectedDay = pokemon;
+  }
 
   ngOnInit(): void {
-    this.loadData();
-    
-  }
-
- 
-  loadData(): void {
-    this.http.get<ItineraryItem[]>('assets/data.json').subscribe(data => {
-      this.itinerary = data;
-      this.filteredData = data;
-    });
-  
-    combineLatest([
+    this.days$ = combineLatest([
       this.filterService.filter$,
       this.dayFilterService.filter$
-    ]).subscribe(([ciudad, dia]) => {
-      console.log(dia)
-      let tempData = this.itinerary;
-  
-      if (ciudad && ciudad !== 'All') {
-        tempData = tempData.filter(item => item.ciudad.nombre === ciudad);
-      }
-  
-      if (dia && dia !== 'All') {
-        tempData = tempData.filter(item => item.dia === +dia); 
-      }
-  
-      this.filteredData = tempData;
+    ]).pipe(
+      switchMap(([ciudad, dia]) => {
+        return this.daysService.getAll().pipe(
+          map(days => {
+            let tempData = days.sort((a, b) => a.dia - b.dia);
 
-      
+            if (ciudad && ciudad !== 'All') {
+              tempData = tempData.filter(item => item.ciudad.nombre === ciudad);
+            }
+
+            if (dia && dia !== 'All') {
+              tempData = tempData.filter(item => item.dia === +dia);
+            }
+
+            return tempData;
+          })
+        );
+      })
+    );
+
+    // Esto solo es para propósitos de depuración.
+    this.days$.subscribe(days => {
+      console.log(days);
     });
   }
-  
 }
