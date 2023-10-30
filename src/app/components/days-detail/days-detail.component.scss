@@ -13,6 +13,7 @@ section{
 
 .container{
     max-width: 700px;
+    position: relative;
  
 }
 
@@ -353,6 +354,28 @@ section{
     }
 }
 
+.toggle-form-btn{
+    margin: auto;
+    z-index: 100;
+    background-color: #b0a9a9;
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    svg{
+        fill: $paleWhite;
+        font-size: 30px;
+    }
+    &:hover{
+        cursor: pointer;
+        background-color: #a9a9a9;
+    }
+}
+
 @media screen and (max-width: 540px){
     .container{
         max-width: 320px;
@@ -370,6 +393,49 @@ section{
             font-size: 15px;
         }
     }
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 2%;
+    height: 580px;
+    border-radius: 20px;
+    background-color: $lightBlack;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    height: 550px;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+label{
+    font-size: 12px;
+    font-weight: 700;
+}
+input{
+    width: 250px;
+    margin-bottom: 1rem;
+}
+textarea{
+    width: 250px;
+    height: 100px;
+    margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 380px) {

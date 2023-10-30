@@ -3,9 +3,11 @@ import {
   CollectionReference,
   DocumentData,
   collection,
-  doc
+  doc,
+  addDoc,
+  deleteDoc, updateDoc
 } from '@firebase/firestore';
-import { Firestore, collectionData, docData } from '@angular/fire/firestore';
+import { Firestore, collectionData, docData, setDoc } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 import { Itinerario } from 'src/app/interface/itinerario.interface';
 
@@ -33,5 +35,37 @@ export class DaysFirestoreService {
       idField: 'id',
     }) as Observable<Itinerario>;
   }
+
+  create(day: Itinerario) {
+    try {
+      const plainObject = JSON.parse(JSON.stringify(day));
+      return addDoc(this.dayCollection, plainObject);
+    } catch (error) {
+      console.log(error);
+      return Promise.reject(error);; 
+    }
   }
+
+  update(id: string, data: Partial<Itinerario>): Promise<void> {
+    try {
+      const docRef = doc(this.firestore, 'data', id);
+      console.log(data)
+      console.log(docRef)
+      return updateDoc(docRef, data);
+    } catch (error) {
+      console.error('Error updating document:', error);
+      return Promise.reject(error);
+    }
+  }
+
+  delete(id: string ) {
+    try {
+      return deleteDoc(doc(this.firestore, 'data', id));
+    } catch (error) {
+      console.log(error);
+      return null; 
+    }
+  }
+
+}
 

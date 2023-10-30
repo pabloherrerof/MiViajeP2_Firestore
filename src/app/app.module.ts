@@ -14,6 +14,8 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { environment } from 'src/environments/environment';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { provideStorage,getStorage } from '@angular/fire/storage';
+import { FirestoreModule } from '@angular/fire/firestore';
+import { FormsModule } from '@angular/forms'; 
 
 
 
@@ -24,8 +26,8 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     DaysLayoutComponent,
     DaysDetailComponent,
     PlayerComponent,
-    FiltersComponent
-    
+    FiltersComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,9 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideFirestore(() => getFirestore()),
     provideDatabase(() => getDatabase()),
-    provideStorage(() => getStorage())
+    provideStorage(() => getStorage()),
+    FirestoreModule,
+    FormsModule
   ],
   providers: [
   ],

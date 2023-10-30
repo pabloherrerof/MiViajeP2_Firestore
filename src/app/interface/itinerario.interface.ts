@@ -15,12 +15,15 @@ interface Ciudad {
   }
   
   export interface Itinerario {
-    id: string;
+    id?: string;
     dia: number;
     ciudad: Ciudad;
     video: Video;
     actividades: string[];
     hotel: Hotel;
   }
+
+
+  
   
   type Item = Itinerario;
