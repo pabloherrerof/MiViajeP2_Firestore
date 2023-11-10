@@ -1,7 +1,7 @@
 {
   "hosting": [
     {
-      "target": "MiViajeP1",
+      "target": "MiViajeP2",
       "source": ".",
       "frameworksBackend": {}
     }
