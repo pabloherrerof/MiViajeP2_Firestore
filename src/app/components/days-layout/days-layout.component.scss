@@ -122,7 +122,6 @@ section{
 }
 
 .toggle-form-btn{
-    margin: auto;
     z-index: 100;
     background-color: #b0a9a9;
     border: none;
@@ -204,5 +203,25 @@ textarea{
     color: $red;
     h4{
         margin-bottom: 0.5rem;
+    }
+}
+
+.not-found{
+    font-family: "Red Rose";
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0rem;
+    margin-top: 2rem;
+}
+
+.success{
+    color: rgb(34, 154, 72);
+    width: 100%;
+    text-align: center;
+    h4{
+        font-size: 1rem;
+        margin-bottom: 2rem;
+        margin-top: 0.5rem;
     }
 }

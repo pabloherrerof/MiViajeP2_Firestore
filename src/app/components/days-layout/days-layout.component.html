@@ -3,7 +3,9 @@
     <div class="toggle-form-btn" (click)="toggleFormulario()" >
         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>
     </div>
-    
+    <div class="success" *ngIf="success">
+        <h4>{{success}}</h4>
+    </div>
     <ng-container *ngIf="days$ | async as days">
         <div class="form-container" *ngIf="mostrarFormulario" >
             <div class="title title--form ">
@@ -22,28 +24,29 @@
                 <input type="text" required id="ciudad" [(ngModel)]="nuevoDia.ciudad.nombre" name="ciudad">
               </div>
               <div class="form-group">
-                <label for="ciudadImagen">Link de la imagen:</label>
-                <input type="text" required id="ciudadImagen" [(ngModel)]="nuevoDia.ciudad.imagen" name="ciudadImagen">
-              </div>
-              <div class="form-group">
-                <label for="linkFotoVideo">Link miniatura del video:</label>
-                <input type="text" required id="linkFotoVideo" [(ngModel)]="nuevoDia.video.miniatura" name="linkFotoVideo">
-              </div>
-              <div class="form-group">
-                <label for="linkVideo">Link del video:</label>
-                <input type="text" required id="linkVideo" [(ngModel)]="nuevoDia.video.link" name="linkVideo">
-              </div>
+                <label for="fotoCiudad">Foto de la Ciudad:</label>
+                <input type="file"  accept="image/*"  id="fotoCiudad" #fotoCiudad>
+            </div>
+            <div class="form-group">
+                <label for="fotoMiniatura">Foto minuatura del video:</label>
+                <input type="file"  accept="image/*"  id="fotoMiniatura" #fotoMiniatura>
+            </div>
+            <div class="form-group">
+                <label for="video">Video:</label>
+                <input type="file"  id="video" #video>
+              
+            </div>
               <div class="form-group">
                 <label for="nombreHotel">Nombre del Hotel:</label>
                 <input type="text" required id="nombreHotel" [(ngModel)]="nuevoDia.hotel.nombre" name="nombreHotel">
               </div>
               <div class="form-group">
-                <label for="direccionHotel">Nombre del Hotel:</label>
+                <label for="direccionHotel">Direccion del Hotel:</label>
                 <input type="text" required id="direccionHotel" [(ngModel)]="nuevoDia.hotel.direccion" name="direccionHotel">
               </div>
               <div class="form-group">
-                <label for="fotoHotel">Link de la foto del Hotel:</label>
-                <input type="text" required id="fotoHotel" [(ngModel)]="nuevoDia.hotel.foto" name="fotoHotel">
+                <label for="fotoHotel">Foto del Hotel:</label>
+                <input id="fotoHotel"  accept="image/*"  type="file" #fotoHotel>
               </div>
               <div class="form-group">
                 <label for="actividades">Actividades:</label>
@@ -52,7 +55,7 @@
               <!-- ... otros campos del formulario ... -->
         
               <!-- Botones para guardar y cancelar -->
-              <button type="button" (click)="guardar()">Guardar</button>
+              <button type="button" (click)="guardar(fotoHotel, fotoMiniatura,fotoCiudad,video )">Guardar</button>
               <button type="button" (click)="cancelar()">Cancelar</button>
             </form>
           </div>
@@ -78,15 +81,12 @@
             </div>
         </div>
         <div class="container slide-in-elliptic-top-fwd" *ngIf="days.length === 0">
-            <div class="dayContainer">
-                <div class="day">
-                    <h2>day </h2> <h2 class="number">X</h2>
-                </div>
+
+
                 
-                <div class="image"></div>
-                <h1 class="cityName">NOT FOUND</h1>
+                <h1 class="not-found">0 RESULTS</h1>
                
-            </div>
+
         </div>
     </ng-container>
 

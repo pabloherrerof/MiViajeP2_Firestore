@@ -1,24 +1,12 @@
 import { HttpClient } from '@angular/common/http';
-import { Component } from '@angular/core';
+import { ChangeDetectorRef, Component } from '@angular/core';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
+import { Itinerario } from 'src/app/interface/itinerario.interface';
 import { FilterService } from 'src/app/services/cityFilter/city-filter.service';
 import { DayFilterService } from 'src/app/services/dayFilter/day-filter.service';
-interface ItineraryItem {
-  dia: number;
-  ciudad: {
-    nombre: string;
-    imagen: string;
-  };
-  video: {
-    miniatura: string;
-    link: string;
-  };
-  actividades: string[];
-  hotel: {
-    foto: string;
-    nombre: string;
-    direccion: string;
-  };
-}
+import { DaysFirestoreService } from 'src/app/services/firestore/days-firestore.service';
+
 @Component({
   selector: 'app-filters',
   templateUrl: './filters.component.html',
@@ -26,25 +14,36 @@ interface ItineraryItem {
 })
 export class FiltersComponent {
 
-  itineraries: ItineraryItem[] = [];
-  
-  constructor(private http: HttpClient, private filterService: FilterService, private dayFilterService: DayFilterService) {}
+  days$: Observable<Itinerario[]>;
+  uniqueCities$: Observable<string[]>;
+  uniqueDays$: Observable<number[]>;
+
+  constructor(
+    private http: HttpClient, 
+    private filterService: FilterService, 
+    private dayFilterService: DayFilterService, 
+    private cdr: ChangeDetectorRef, 
+    private dayService: DaysFirestoreService
+  ) {}
 
   ngOnInit(): void {
-    this.http.get<ItineraryItem[]>('assets/data.json').subscribe(data => {
-      this.itineraries = data;
-    });
+    // Asignamos el Observable a this.days$
+    this.days$ = this.dayService.getAll();
+
+    // Creamos un nuevo Observable para ciudades únicas
+    this.uniqueCities$ = this.days$.pipe(
+      map(days => days.map(day => day.ciudad.nombre)),
+      map(names => Array.from(new Set(names)))
+    );
+
+    // Creamos un nuevo Observable para días únicos
+    this.uniqueDays$ = this.days$.pipe(
+      map(days => days.map(day => day.dia)),
+      map(days => Array.from(new Set(days)).sort((a, b) => a - b))
+    );
   }
 
-  get uniqueCities(): string[] {
-    const cities = this.itineraries.map(item => item.ciudad.nombre);
-    return [...new Set(cities)]; // Esto elimina las ciudades repetidas
-  }
-  get uniqueDays(): number[] {
-    const days = this.itineraries.map(item => item.dia);
-    return [...new Set(days)].sort((a, b) => a - b); // Esto elimina días repetidos y los ordena
-  }
-
+  // Las siguientes funciones asumen que se están llamando con los datos ya emitidos
   onCityChange(event: any) {
     this.filterService.setFilter(event.target.value);
   }
@@ -52,6 +51,4 @@ export class FiltersComponent {
   onDayChange(event: any) {
     this.dayFilterService.setFilter(event.target.value);
   }
-  
-  
 }
