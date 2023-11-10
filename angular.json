@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "MiViajeP1": {
+    "MiViajeP2": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "MiViajeP1:build:production"
+              "browserTarget": "MiViajeP2:build:production"
             },
             "development": {
-              "browserTarget": "MiViajeP1:build:development"
+              "browserTarget": "MiViajeP2:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "MiViajeP1:build"
+            "browserTarget": "MiViajeP2:build"
           }
         },
         "test": {
@@ -102,7 +102,7 @@
           "builder": "@angular/fire:deploy",
           "options": {
             "version": 2,
-            "browserTarget": "MiViajeP1:build:production"
+            "browserTarget": "MiViajeP2:build:production"
           }
         }
       }
